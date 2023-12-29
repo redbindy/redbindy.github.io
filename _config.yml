@@ -6,6 +6,7 @@ theme: jekyll-theme-dinky
 
 # Conversion
 markdown: kramdown
+mathjax: true
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
