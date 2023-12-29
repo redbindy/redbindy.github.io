@@ -3,3 +3,10 @@ description: 집코더(redbindy)의 정리용 깃허브 블로그
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-dinky
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
