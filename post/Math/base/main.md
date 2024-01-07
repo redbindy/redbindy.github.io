@@ -11,6 +11,7 @@ layout: default
 
 ## 중학교
 여기부터는 교과서 순서 그대로 갑니다!
-- [수와 연산](./middle/number%20and%20arithmetic.html)
+- [수와 연산](./middle/Number%20and%20Operation.html)
+- [문자와 식](./middle/Algebraic%20Expressions.html)
 
 ## 고등학교
