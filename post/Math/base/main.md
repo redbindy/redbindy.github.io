@@ -7,7 +7,7 @@ layout: default
 이유는 그냥 제가 갖고 있는 자료가 저것뿐이라서...
 
 ## 초등학교
-- [비와 비율 및 기타 내용](./element/ratio,%20ratio-element.html)
+- [비와 비율 및 기타 내용](./element/Ratio%20and%20Rate.html)
 
 ## 중학교
 여기부터는 교과서 순서 그대로 갑니다!
