@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  {% seo %}
+  <link rel="stylesheet" href="{{ " /assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  {% include head-custom.html %}
 
   <div class="sns-icons">
     <a href="{{ site.github.owner_url }}" target="_blank"><img src="{{ " /" | absolute_url }}/github.png"
@@ -133,10 +137,6 @@
   </div>
 
   <script src="{{ " /" | absolute_url }}/assets/script.js"></script>
-
-  {% seo %}
-  <link rel="stylesheet" href="{{ " /assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-  {% include head-custom.html %}
 
   {% include mathjax_support.html %}
 
