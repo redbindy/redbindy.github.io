@@ -166,6 +166,21 @@ layout: default
   - $ 00010101 \Rightarrow 0.00010101 $ 
 
 #### 부동소수점 표현 방식
+- 과학적 표기 방식의 실수를 사용
+  - $ n.nnn \times {base}^{exp} $ 형태
+  - base는 밑수(= radix), exp는 지수 n.nnn부분이 소수부
+- 부호, 지수, 가수의 세 영역으로 나눠서 사용
+- 표현 범위에 따라 32비트 단정도(Single Precision)과 배정도(Double Precision)으로 나눔
+![단정도 표현](image-2.png)
+![배정도 표현](image-3.png)
+[출처: https://en.wikipedia.org/wiki/IEEE_754-1985](https://en.wikipedia.org/wiki/IEEE_754-1985)
+
+##### 변환 과정
+- 어떤 숫자를 저장할 때 다음 과정을 거침
+- 일단 2진수로 변환해서 표현됐다고 하고
+1. 정규화: $ 1.nnn * 2^{exp} $ 꼴로 변환
+2. 부호: 양수는 0, 음수는 1을 저장
+3. 가수부: 항상 수가 1. 으로 시작한다고 가정하고 소수 부분만 저장
 
 
 # 자료의 추상화
