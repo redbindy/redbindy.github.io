@@ -17,29 +17,31 @@ layout: default
 # 학습
 가볍게 볼 수 있게 간단하게 정리하는 게 목표!
 
-## [컴퓨터 공학](./post/ComputerScience/main.html)
-(= 컴퓨터 과학, 소프트웨어 공학 등등)<br>
-전공 관련 내용을 기본으로 하되 IDE 사용법 같은 실용적인 것들도 다뤄볼 예정
+## 게시 자료 목록들
+
+### 컴퓨터 공학(컴퓨터 과학)
+
+#### IDE
+- ##### [VC++ 64비트 어셈블리어 사용하기](./post/ComputerScience/VC++Masm/VC++Masm.html)
 
 #### POCU 아카데미 링크
 POCU 아카데미에서 배운 내용들은 따로 게시하지 않고 수강 신청 링크로 대체할 예정입니다. <br>
 단, POCU 외 다른 매체(책, 공개 강의 등)를 통해서 동일한 주제를 학습했다면 이를 정리하는 과정에서 겹치는 내용이 게시될 수도 있습니다.
 
-- [실무 프로그래밍 입문(C#)](https://pocu.academy/ko/Courses/COMP1500)
-- [소프트웨어 공학용 수학](https://pocu.academy/ko/Courses/COMP1000)
-- [C 언매니지드 프로그래밍](https://pocu.academy/ko/Courses/COMP2200)
-- [어셈블리 프로그래밍](https://pocu.academy/ko/Courses/COMP2300)
-- [개체지향 프로그래밍 및 설계(Java)](https://pocu.academy/ko/Courses/COMP2500)
-- [C++ 언매니지드 프로그래밍](https://pocu.academy/ko/Courses/COMP3200)
-- [알고리듬 및 자료구조(Java)](https://pocu.academy/ko/Courses/COMP3500)
+- ##### [실무 프로그래밍 입문(C#)](https://pocu.academy/ko/Courses/COMP1500)
+- ##### [소프트웨어 공학용 수학](https://pocu.academy/ko/Courses/COMP1000)
+- ##### [C 언매니지드 프로그래밍](https://pocu.academy/ko/Courses/COMP2200)
+- ##### [어셈블리 프로그래밍](https://pocu.academy/ko/Courses/COMP2300)
+- ##### [개체지향 프로그래밍 및 설계(Java)](https://pocu.academy/ko/Courses/COMP2500)
+- ##### [C++ 언매니지드 프로그래밍](https://pocu.academy/ko/Courses/COMP3200)
+- ##### [알고리듬 및 자료구조(Java)](https://pocu.academy/ko/Courses/COMP3500)
 
-## [데이터 사이언스](./post/DataScience/main.html)
-통계학 내용(깊이는 얕음) + 통계 패키지 관련 내용들(집계, 시각화, ...)로 다뤄볼 예정
+### 수학
+초중고 기초 수학의 경우 2009 개정 교육과정 기준으로 내용이 작성됨
 
-## [수학](./post/Math/main.html)
-역시나 얕은 깊이로 다룰 예정(어차피 깊게 몰라서 못 다룸...)
+#### 초등학교 수학
+- ##### [도입 및 비와 비율만 다루는 이유](./post/Math/element/introduction.html)
+- ##### [비와 비율](./post/Math/element/Ratio%20and%20Rate.html)
 
-## [자연과학](./post/Science/main.html)
-수학과 같은 맥락으로 다룰 예정
-
-# 기타
+#### 중학교 수학
+- ##### [1학년 과정](./post/Math/middle/index_first.html)
