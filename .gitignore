@@ -1,9 +1,5 @@
-_site
-node_modules
+*.gem
+.bundle
 .sass-cache
-*.gem
+_site
 Gemfile.lock
-*.gem
-assets/**/*.html
-assets/**/*.md
-.jekyll-cache

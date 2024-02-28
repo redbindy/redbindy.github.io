@@ -1,170 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en-US" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  {% seo %}
-  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-  {% include head-custom.html %}
+  {%- include head.html -%}
 
-  <div class="sns-icons">
-    <a href="{{ site.github.owner_url }}" target="_blank"><img src="{{ "/" | absolute_url }}/Github.png"
-        alt="Github_Icon"></a>
-    <a href="https://www.linkedin.com/in/%EC%8A%B9%EC%9D%BC-%EA%B0%95-614b14241/" target="_blank"><img src="{{ "/" |
-        absolute_url }}/Linkedin.png" alt="Linkedin_Icon"></a>
-    <a href="https://www.youtube.com/@user-zb8vq3yx2x/featured" target="_blank"><img src="{{ "/" | absolute_url
-        }}/Youtube.png" alt="Youtube_Icon"></a>
-  </div>
+  <body>
 
-  <style>
-    .sns-icons {
-      position: fixed;
-      top: 10px;
-      /* 상단 여백 조절 */
-      right: 10px;
-      /* 우측 여백 조절 */
-      display: flex;
-    }
+    {%- include views/header.html -%}
 
-    .sns-icons a {
-      margin-left: 10px;
-      /* 각 아이콘 사이의 여백 조절 */
-    }
+    {%- include views/banner.html -%}
 
-    .sns-icons img {
-      width: 80px;
-      /* 아이콘의 너비 조절 */
-      height: 30px;
-      /* 아이콘의 높이 조절 */
-    }
-  </style>
+    {%- include extensions/hashlocate.html -%}
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
+    {%- include extensions/theme-toggle.html -%}
 
-    .navbar {
-      display: flex;
-      position: fixed;
-      overflow: hidden;
-      top: 0;
-      background-color: #333;
-      width: 40px;
-      text-align: center;
-    }
+    {%- include extensions/click-to-top.html -%}
 
-    .navbar a {
-      float: auto;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 15px 16px;
-      text-decoration: none;
-    }
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
 
-    .navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
+    {%- include views/footer.html -%}
 
-    .toc {
-      display: none;
-      overflow-y: scroll;
-      max-height: 50%;
-      position: fixed;
-      top: 20%;
-      left: 0;
-      width: 30%;
-      background-color: #f8f9fa;
-      padding: 10px;
-      border-radius: 0 0 5px 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-
-    .toc a {
-      display: list-item;
-      margin-bottom: 5px;
-      text-decoration: none;
-      color: #212529;
-      marker: none;
-    }
-
-    .toc ul {
-      list-style-type: none;
-      padding-left: 20px;
-    }
-
-    .toc li {
-      position: relative;
-    }
-
-    .toc li:before {
-      content: ' ';
-      /* 화살표 아이콘 (▼) */
-      position: absolute;
-      left: 0px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-
-    .toc .sublist {
-      display: list-item;
-    }
-
-    .toc li:hover:before {
-      content: ' ';
-      /* 화살표 아이콘 (▲) */
-    }
-
-    .toc li:hover .sublist {
-      display: list-item;
-    }
-  </style>
-
-  <div class="navbar">
-    <a href="javascript:void(0);" onclick="toggleToc()">☰ 목차</a>
-  </div>
-
-  <div class="toc" id="toc">
-    <!-- 목차가 자동으로 생성될 자리 -->
-  </div>
-
-  <script src="{{ "/" | absolute_url }}/assets/script.js"></script>
-
-  {% include mathjax_support.html %}
-
-  <!-- {% if page.use_math %} 
-    {% endif %} -->
-
-</head>
-
-<body>
-
-  <div class="container-lg px-3 my-5 markdown-body">
-    {% if site.title and site.title != page.title %}
-    <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
-    {% endif %}
-
-    <div class="content">
-      {{ content }}
-    </div>
-
-    {% if site.github.private != true and site.github.license %}
-    <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-      This site is open source. {% github_edit_link "Improve this page" %}.
-    </div>
-    {% endif %}
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
-    integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-  <script>anchors.add();</script>
-</body>
-
+  </body>
 </html>
