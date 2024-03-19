@@ -18,7 +18,7 @@ tags: [깃, git]
 ### 2. 생성 후 .gitignore 파일에 복붙
 ctrl + s 하면 텍스트 파일로 저장도 가능하네요
 
-![생성된 내용 내용](/assets/images/2024-03-19-gitignore_generator_images/contents.png)
+![생성된 내용](/assets/images/2024-03-19-gitignore_generator_images/contents.png)
 
 ## 여담
 
