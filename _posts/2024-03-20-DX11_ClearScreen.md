@@ -2,7 +2,7 @@
 layout: post
 title: DirectX11 튜토리얼 정리1\:\ 화면 지우기(작성 중...)
 category: 컴퓨터공학
-tags: [C++, DX11, DirectX11]
+tags: [C/C++, DX11, DirectX11]
 ---
 
 ## 튜토리얼 정리 시리즈 작성 계기
