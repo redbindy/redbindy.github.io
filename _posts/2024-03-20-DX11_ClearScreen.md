@@ -3,6 +3,7 @@ layout: post
 title: "DirectX11 튜토리얼 정리1: 화면 지우기"
 category: 컴퓨터공학
 tags: [C/C++, DX11, DirectX11]
+mathjax: true
 ---
 
 ## 튜토리얼 정리 시리즈 작성 계기
@@ -482,7 +483,7 @@ RenderTargetView* rtv = (RenderTargetView*)resources;
 	viewPort.TopLeftY = 0;
 ~~~
 
-&emsp;클립 공간 좌표계(X, Y [-1, 1], Z [0, 1] 범위로 정규화 시킨 공간, 픽셀 공간이라고도 한다고 하네요)를 매핑시키는 역할을 하는 뷰포트를 초기화합니다. DX11에서는 기본값이 없어서 반드시 해줘야 합니다.
+&emsp;클립 공간 좌표계($ X, Y [-1, 1], Z [0, 1] $ 범위로 정규화 시킨 공간, 픽셀 공간이라고도 한다고 하네요)를 매핑시키는 역할을 하는 뷰포트를 초기화합니다. DX11에서는 기본값이 없어서 반드시 해줘야 합니다.
 
 #### 뷰 포트를 RS 단계에 설정
 
