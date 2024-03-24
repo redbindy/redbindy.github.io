@@ -486,11 +486,9 @@ RenderTargetView* rtv = (RenderTargetView*)resources;
 
 ##### 클립 공간 좌표계
 
-<div>
 $$ 
 	X, Y [-1, 1], Z [0, 1] 
 $$ 
-</div>
 
 범위로 정규화 시킨 공간이라고 합니다. 픽셀 공간이라고도 한다고 하네요.
 
