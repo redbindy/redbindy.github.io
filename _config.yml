@@ -211,6 +211,7 @@ defaults:
 markdown: kramdown
 kmarkdown:
   input: GFM
+  math_engine: mathjax
 
 plugins:
   - jekyll-feed
