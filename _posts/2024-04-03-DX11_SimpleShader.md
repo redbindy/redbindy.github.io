@@ -801,6 +801,7 @@ void Render()
 
 &emsp;행렬, 벡터 사용할 때 주의할 점이 있습니다. 기본적으로 DirectX랑, HLSL의 '사용법' 자체는 벡터 * 행렬(Row-major 방식)로 구성되어 있고 DirectXMath 라이브러리도 동일한 방법으로 구현돼있습니다. 그러나 HLSL은 기본 방식은 행렬 * 벡터(Column-major 방식) 형태로 되어 있기 때문에 전송하기 전에 전치 연산을 하고 전송해주셔야 합니다.(따로 설정하는 방법도 있긴 합니다. 자세한 건 문서 참고!)
 
+<div>
 $$
 	\begin{bmatrix}
  		1 & 2 & 3 & 4
@@ -812,9 +813,11 @@ $$
 		1 & 2 & 3 & 4
 	\end{bmatrix}
 $$
+</div>
 
 &emsp;Row-major는 요렇게 표현 하는 방법이고
 
+<div>
 $$
 	\begin{bmatrix}
  		1 & 1 & 1 & 1 \\\\\\
@@ -829,6 +832,7 @@ $$
 		4 \\\\\\
 	\end{bmatrix}
 $$
+</div>
 
 &emsp;Column-major는 요렇게 표현합니다.
 
