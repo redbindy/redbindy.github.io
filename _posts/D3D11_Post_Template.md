@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "DirectX11 튜토리얼 정리n: "
+title: "Direct3D11 튜토리얼 정리n: "
 category: 컴퓨터공학
-tags: [C/C++, DX11, DirectX11]
+tags: [C/C++, D3D11, Direct3D11]
 ---
 
 ## 이전 게시글
 
 &emsp;이전 게시글에서 내용과 코드가 이어집니다. 안 보고 오셨다면
-
-### [DirectX11 튜토리얼 정리1: 화면 지우기](/컴퓨터공학/2024/03/20/DX11_ClearScreen.html)
 
 &emsp;먼저 보시는 것도 추천!
 
@@ -47,7 +45,7 @@ tags: [C/C++, DX11, DirectX11]
 
 ### 윈도우 관련 코드
 
-### DirectX11
+### Direct3D11
 
 ### HLSL
 

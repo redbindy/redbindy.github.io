@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "DirectX11 튜토리얼 정리1: 화면 지우기"
+title: "Direct3D11 튜토리얼 정리1: 화면 지우기"
 category: 컴퓨터공학
-tags: [C/C++, DX11, DirectX11]
+tags: [C/C++, D3D11, Direct3D11]
 ---
 
 ## 튜토리얼 정리 시리즈 작성 계기
@@ -14,7 +14,7 @@ tags: [C/C++, DX11, DirectX11]
 &emsp;C스타일로 하면서 최대한 함수로 빼지 않고 정리를 덜하는 방향으로 코드를 작성할 예정입니다. 잘 추상화되고 정리된 코드를 원하신다면 다른 공개된 자료들이 훨씬 더 좋습니다!
 
 ## 결과
-![결과 이미지](/assets/images/2024-03-20-DX11_ClearScreen_images/result.JPG)
+![결과 이미지](/assets/images/2024-03-20-D3D11_ClearScreen_images/result.JPG)
 
 &emsp;이렇게 윈도우에 바탕색을 채워 넣는 코드를 작성해볼 예정입니다. 콘솔창은 그냥 덤으로 같이 찍어본 것이니 오해하지 마시길!ㅋㅋㅋ
 
@@ -334,7 +334,7 @@ void Render()
 
 &emsp;WM_CREATE에서 D3D11 초기화 안 하고 뒤늦게 초기화 해주고 있는데 왜 그런지는 똑똑한 여러분이라면 잘 아실거라 생각합니다(?). 사실 위 코드를 갖고온 이유가 그 부분 한 번 생각해볼만 한 것 같아서 따로 뽑아 봤습니다. ~~assert를 찬양합시다~~
 
-### DirectX11
+### Direct3D11
 
 &emsp;일단 큰 흐름에서 이번 챕터를 살펴보면 다음과 같습니다.
 
@@ -482,7 +482,7 @@ RenderTargetView* rtv = (RenderTargetView*)resources;
 	viewPort.TopLeftY = 0;
 ~~~
 
-&emsp;클립 공간 좌표계를 매핑시키는 역할을 하는 뷰포트를 초기화합니다. DX11에서는 기본값이 없어서 반드시 해줘야 합니다.
+&emsp;클립 공간 좌표계를 매핑시키는 역할을 하는 뷰포트를 초기화합니다. D3D11에서는 기본값이 없어서 반드시 해줘야 합니다.
 
 ##### 클립 공간 좌표계
 
@@ -563,7 +563,7 @@ void Render()
 
 이런 느낌이 될 것 같습니다.
 
-## Direct3D 11 개체 모델
+## Direct3D11 개체 모델
 
 &emsp;리소스 생성과 렌더링 기능을 한 개 이상의 컨텍스트로 분리해서 멀티스레딩에 용이함 추구하기 위해 디자인됨
 

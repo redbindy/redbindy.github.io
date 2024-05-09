@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "DirectX11 튜토리얼 정리3: 간단한 쉐이더 활용"
+title: "Direct3D11 튜토리얼 정리3: 간단한 쉐이더 활용"
 category: 컴퓨터공학
-tags: [C/C++, DX11, DirectX11]
+tags: [C/C++, D3D11, Direct3D11]
 ---
 
 ## 이전 게시글
 
 &emsp;이전 게시글에서 내용과 코드가 이어집니다. 안 보고 오셨다면
 
-### [DirectX11 튜토리얼 정리1: 화면 지우기](/컴퓨터공학/2024/03/20/DX11_ClearScreen.html)
-### [DirectX11 튜토리얼 정리2: 삼각형 그리기](/컴퓨터공학/2024/03/29/DX11_DrawTriangle.html)
+### [Direct3D11 튜토리얼 정리1: 화면 지우기](/컴퓨터공학/2024/03/20/D3D11_ClearScreen.html)
+### [Direct3D11 튜토리얼 정리2: 삼각형 그리기](/컴퓨터공학/2024/03/29/D3D11_DrawTriangle.html)
 
 &emsp;먼저 보시는 것도 추천!
 
 ## 결과
 
-![결과 이미지](/assets/images/2024-04-03-DX11_SimpleShader_images/result-ezgif-convertor.gif)
+![결과 이미지](/assets/images/2024-04-03-D3D11_SimpleShader_images/result-ezgif-convertor.gif)
 
 &emsp;3D 관련으로 가기 전에 간단하게 요런 변환을 다뤄봅시다. 볼륨이 적은 게시글이 될 것 같네요.
 
@@ -649,7 +649,7 @@ cbuffer ConstantBuffer : register(b0)
 
 이전과 동일
 
-### DirectX11
+### Direct3D11
 
 &emsp;이번 흐름은 다음과 같습니다.
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: "DirectX11 튜토리얼 정리2: 삼각형 그리기"
+title: "Direct3D11 튜토리얼 정리2: 삼각형 그리기"
 category: 컴퓨터공학
-tags: [C/C++, DX11, DirectX11]
+tags: [C/C++, D3D11, Direct3D11]
 ---
 
 ## 이전 게시글
 
 &emsp;이전 게시글에서 내용과 코드가 이어집니다. 안 보고 오셨다면
 
-### [DirectX11 튜토리얼 정리1: 화면 지우기](/컴퓨터공학/2024/03/20/DX11_ClearScreen.html)
+### [Direct3D11 튜토리얼 정리1: 화면 지우기](/컴퓨터공학/2024/03/20/D3D11_ClearScreen.html)
 
 &emsp;먼저 보시는 것도 추천!
 
 ## 결과
 
-![결과 이미지](/assets/images/2024-03-29-DX11_DrawTriangle_images/result.JPG)
+![결과 이미지](/assets/images/2024-03-29-D3D11_DrawTriangle_images/result.JPG)
 
 &emsp;이렇게 간단한 삼각형을 그리는 코드를 작성해볼 예정입니다. 삼각형을 그릴 때 두 가지 버전의 코드로 작성을 해볼 건데 실제로는 두 번째 버전만 사용한다고 보셔도 좋을 것 같습니다!
 
@@ -601,7 +601,7 @@ float4 main() : SV_TARGET
 
 &emsp;바뀐 게 없으니 생략!
 
-### DirectX11
+### Direct3D11
 
 &emsp;이번 챕터의 큰 흐름은 다음과 같습니다.
 
@@ -850,7 +850,7 @@ spDeviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
 &emsp;정점이 주어졌을 때 어떤 방식으로 도형을 그릴지 결정하는 부분입니다. 주석에는 삼각형만 그릴거라 삼각형 그리기 방법이라 했는데 꼭 삼각형만 되는 건 아닙니다ㅋㅋ 노파심에 언급!
 
-![위상 방법](/assets/images/2024-03-29-DX11_DrawTriangle_images/topology_method.png)
+![위상 방법](/assets/images/2024-03-29-D3D11_DrawTriangle_images/topology_method.png)
 
 위와 같은 도형이 있다고 할 때, 예제에서 설정한 방식을 선택해서 왼쪽 도형을 그린다면
 
@@ -944,7 +944,7 @@ void Render()
 
 &emsp;전 내용과 동일
 
-### DirectX11
+### Direct3D11
 
 &emsp;거의 같습니다. 
 
@@ -1080,7 +1080,7 @@ void Render()
 
 ## Direct3D 11 그래픽 파이프라인
 
-![D3D11 그래픽 파이프라인](/assets/images/2024-03-29-DX11_DrawTriangle_images/d3d11_pipeline_stages.JPG)
+![D3D11 그래픽 파이프라인](/assets/images/2024-03-29-D3D11_DrawTriangle_images/d3d11_pipeline_stages.JPG)
 
 &emsp;Direct3D 11 그래픽 파이프라인은 위와 같습니다. 이 단계들 중에서 Vertex Shader, Pixel Shader는 필수이고(인데 보다보니 픽셀 쉐이더는 끌 수 있나보네요. 요건 SDK 튜토리얼 설명 기준이었습니다.) 나머지는 선택적으로 적용하는 거라고 하네요. 어쨌거나 이제 하나씩 살펴봅시다.
 
