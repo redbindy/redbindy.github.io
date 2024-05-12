@@ -1141,6 +1141,6 @@ static ID3D11DepthStencilView* spDepthStencilView;
 - [MSDN - D3D11_DEPTH_STENCIL_VIEW_DESC structure (d3d11.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_view_desc)
 - [MSDN - D3D11_TEX2D_DSV structure (d3d11.h)](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_tex2d_dsv)
 - [디자인프레스 - 가장 오래된 그래픽 기법, 스텐실 (2)](https://m.blog.naver.com/designpress2016/222078342448)
-- [ShaderLab: 스텐실](https://docs.unity3d.com/kr/530/Manual/SL-Stencil.html)
+- [Unity Documentation - ShaderLab: 스텐실](https://docs.unity3d.com/kr/530/Manual/SL-Stencil.html)
 - [MSDN - ID3D11DeviceContext::ClearDepthStencilView 메서드(d3d11.h)](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-cleardepthstencilview)
 - [MSDN - D3D11_CLEAR_FLAG 열거형(d3d11.h)](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ne-d3d11-d3d11_clear_flag)
