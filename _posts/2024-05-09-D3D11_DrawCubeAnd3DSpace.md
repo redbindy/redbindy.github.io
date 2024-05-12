@@ -19,6 +19,8 @@ tags: [C/C++, D3D11, Direct3D11]
 
 ![결과 이미지](/assets/images/2024-05-09-D3D11_DrawCubeAnd3DSpace_images/result.gif)
 
+&emsp;요렇게 알록달록한 육면체를 회전시키는 걸 작성해볼 겁니다.
+
 ## 이번 게시글에서 사용할 전체 코드
 
 **Jekyll 버그인지 코드 부분 부분에서 넣지도 않은 \가 출력되고 있네요. 참고해주십쇼!**
